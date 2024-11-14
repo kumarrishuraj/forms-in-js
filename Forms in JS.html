@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .form-group {
+            margin: 5px;
+            font-size: 25px;
+        }
+        input[type="password"]{
+            outline: 4px solid rgb(117, 117, 216);
+            outline-offset: 3px;
+            margin: 6px;
+        }
+        input.success {
+            border-top: 4px solid black;
+            border-left: 4px solid black;
+            border-bottom: 4px solid rgb(50, 238, 50);
+            border-right: 4px solid rgb(50, 238, 50);
+        }
+
+        input.error {
+            border-color: red;
+            border-width: 4px;
+        }
+
+        small {
+            color: red;
+            font-size: 20px;
+        }
+
+        small.valid {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form">
+        <div class="form-group">
+            <label for="name">Name:
+                <input type="text" id="name" name="name">
+                <small></small>
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:
+                <input type="email" id="email" name="email">
+                <small></small>
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:
+                    <input type="password" id="password" name="password">
+                    <small></small>
+            </label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
